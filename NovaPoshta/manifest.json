@@ -1,0 +1,13 @@
+ {
+  "manifest_version": 2,
+  "name": "NovaPoshta - update delivery status",
+  "description":"Nova pochta update delivery status",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [ "http://novaposhta.ua/tracking/?cargo_number=*" ],
+      "js": [ "novaPoshta.js", "jquery.js" ],
+      "css": [ "style.css" ]
+    }
+  ]    
+}
